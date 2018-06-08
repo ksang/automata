@@ -1,0 +1,271 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "sEhq34CIl1YUUdWvQHMmbYcYIoA=",
+			"path": "github.com/ajstarks/svgo",
+			"revision": "644b8db467afccf19a0692a3e31a1868e4287ab8",
+			"revisionTime": "2018-02-26T02:51:33Z"
+		},
+		{
+			"checksumSHA1": "4MVSnOuL2mMtPY8yOg1ITVrVAro=",
+			"path": "github.com/golang/freetype",
+			"revision": "e2365dfdc4a05e4b8299a783240d4a7d5a65d4e4",
+			"revisionTime": "2017-06-09T00:35:04Z"
+		},
+		{
+			"checksumSHA1": "aJ/kX/eCUlrCJBZ26Hwh/RXzAIw=",
+			"path": "github.com/golang/freetype/raster",
+			"revision": "e2365dfdc4a05e4b8299a783240d4a7d5a65d4e4",
+			"revisionTime": "2017-06-09T00:35:04Z"
+		},
+		{
+			"checksumSHA1": "m/RS+ZrCnNt0eruBsCEtgt1UNcU=",
+			"path": "github.com/golang/freetype/truetype",
+			"revision": "e2365dfdc4a05e4b8299a783240d4a7d5a65d4e4",
+			"revisionTime": "2017-06-09T00:35:04Z"
+		},
+		{
+			"checksumSHA1": "rPkB8vTtRejw7V6aCNaowAW7YI0=",
+			"path": "github.com/jung-kurt/gofpdf",
+			"revision": "c9e1bab8d53770ad617af447a7d3040465c6f3b9",
+			"revisionTime": "2018-06-01T16:32:24Z"
+		},
+		{
+			"checksumSHA1": "uq0RvbVmV6XWTfHK1PuZdXMSrFw=",
+			"path": "github.com/jung-kurt/gofpdf/internal/example",
+			"revision": "c9e1bab8d53770ad617af447a7d3040465c6f3b9",
+			"revisionTime": "2018-06-01T16:32:24Z"
+		},
+		{
+			"checksumSHA1": "AlrdgelCRv03a+PtfQBUyBsh70E=",
+			"path": "github.com/jung-kurt/gofpdf/internal/files",
+			"revision": "c9e1bab8d53770ad617af447a7d3040465c6f3b9",
+			"revisionTime": "2018-06-01T16:32:24Z"
+		},
+		{
+			"checksumSHA1": "aPfUo+cbob1BPkqvjQl3O/V3EMA=",
+			"path": "github.com/llgcode/draw2d",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "TpgxmneyjLZT6leYQ5JVGuadsXA=",
+			"path": "github.com/llgcode/draw2d/draw2dbase",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "xochGKCYkBDoJLSI7sJeCBzXBwM=",
+			"path": "github.com/llgcode/draw2d/draw2dimg",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "GCrlcqQYdofHNYijx7ka5UsYYOU=",
+			"path": "github.com/llgcode/draw2d/draw2dkit",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "k27MBfcQW0QhWb9DUnaWex+7oVI=",
+			"path": "github.com/llgcode/draw2d/samples",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "nUWVatPZmSZVDV62ORDNsimJgI0=",
+			"path": "github.com/llgcode/draw2d/samples/android",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "Brx6dIusS8JJc9rENLsM4lfnb8E=",
+			"path": "github.com/llgcode/draw2d/samples/frameimage",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "uevMYG0quArBCz9yc+DgMAJ2rng=",
+			"path": "github.com/llgcode/draw2d/samples/geometry",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "3HsKZDmmdAIjL6O+EZFrTFpij4I=",
+			"path": "github.com/llgcode/draw2d/samples/gopher",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "lNJcB4n81hOSroc14+SK+H5DVH0=",
+			"path": "github.com/llgcode/draw2d/samples/gopher2",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "VL1+D17mUQSw3YX5q3ifmXkXg6M=",
+			"path": "github.com/llgcode/draw2d/samples/helloworld",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "c+Op/CM69A831/bk+f6DfumL5WU=",
+			"path": "github.com/llgcode/draw2d/samples/line",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "lo5ScICvx9JMedXlkDxeJQhJ4dU=",
+			"path": "github.com/llgcode/draw2d/samples/linecapjoin",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "WDoLfV7LpAS2Hw0MIRXlIHMw2qY=",
+			"path": "github.com/llgcode/draw2d/samples/postscript",
+			"revision": "274031cf2abe8acd15c4a911e1f7f1295fc4830c",
+			"revisionTime": "2018-01-24T13:33:39Z"
+		},
+		{
+			"checksumSHA1": "EwC/p76ydXOpSXQwc/uI7Ss+9FI=",
+			"path": "golang.org/x/image/draw",
+			"revision": "f315e440302883054d0c2bd85486878cb4f8572c",
+			"revisionTime": "2018-04-03T01:08:12Z"
+		},
+		{
+			"checksumSHA1": "eVRrMaeadTXKrEKifNeilNjW8FY=",
+			"path": "golang.org/x/image/font",
+			"revision": "f315e440302883054d0c2bd85486878cb4f8572c",
+			"revisionTime": "2018-04-03T01:08:12Z"
+		},
+		{
+			"checksumSHA1": "VHZL/jXyGDBq8n59E9w3vJKHoY8=",
+			"path": "golang.org/x/image/font/gofont/goregular",
+			"revision": "f315e440302883054d0c2bd85486878cb4f8572c",
+			"revisionTime": "2018-04-03T01:08:12Z"
+		},
+		{
+			"checksumSHA1": "o7VkCGBiKM5HXzVzrIci1YDlpvc=",
+			"path": "golang.org/x/image/math/f64",
+			"revision": "f315e440302883054d0c2bd85486878cb4f8572c",
+			"revisionTime": "2018-04-03T01:08:12Z"
+		},
+		{
+			"checksumSHA1": "0sihSDuKpgghBRgc4NEmwUudp0U=",
+			"path": "golang.org/x/image/math/fixed",
+			"revision": "f315e440302883054d0c2bd85486878cb4f8572c",
+			"revisionTime": "2018-04-03T01:08:12Z"
+		},
+		{
+			"checksumSHA1": "4HuXn5RzcuX9Sotn0rFbITH4nMo=",
+			"path": "golang.org/x/image/tiff",
+			"revision": "f315e440302883054d0c2bd85486878cb4f8572c",
+			"revisionTime": "2018-04-03T01:08:12Z"
+		},
+		{
+			"checksumSHA1": "PF6VjvpNpOdR8epWH1Liyy7x1Qg=",
+			"path": "golang.org/x/image/tiff/lzw",
+			"revision": "f315e440302883054d0c2bd85486878cb4f8572c",
+			"revisionTime": "2018-04-03T01:08:12Z"
+		},
+		{
+			"checksumSHA1": "CkAiAXmGGesX+4q2uxkkU2Dpwew=",
+			"path": "gonum.org/v1/plot",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "4hCTIx9rCrFiQcFq2r+TVqHC+AY=",
+			"path": "gonum.org/v1/plot/internal/cmpimg",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "5qNGr/W4yzv0WyPz8+ALNWIgsxw=",
+			"path": "gonum.org/v1/plot/palette",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "+UBseoR9LVvMHdGkE9r4vWmh0ok=",
+			"path": "gonum.org/v1/plot/palette/moreland",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "On39yp66qGxci1hl4v8MrxK51SQ=",
+			"path": "gonum.org/v1/plot/plotter",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "0GHVquvh92z+duteXmbd9UFpXEI=",
+			"path": "gonum.org/v1/plot/plotutil",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "9hNOyGGu5YMBJhggPd4xYlyXwLU=",
+			"path": "gonum.org/v1/plot/tools/bezier",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "q342+tofmajS/y5anNMOwsaGmWs=",
+			"path": "gonum.org/v1/plot/vg",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "IJ/VzWF/B3CCdb0TtmLoHo30tcc=",
+			"path": "gonum.org/v1/plot/vg/draw",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "wzkTzl+TNIPPwrCx4kRY6Qt/zJA=",
+			"path": "gonum.org/v1/plot/vg/fonts",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "NqGlIlaweWZ7192PGsqAFTj/SI0=",
+			"path": "gonum.org/v1/plot/vg/recorder",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "ROIpPi+sgGAXgjZQC5SuS3lQFxw=",
+			"path": "gonum.org/v1/plot/vg/vgeps",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "qKSRdZJRmldKJM75Vn4fTCmC15s=",
+			"path": "gonum.org/v1/plot/vg/vgimg",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "sUgI8C/EO5tDduo3YpmgzWlYdGA=",
+			"path": "gonum.org/v1/plot/vg/vgpdf",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "wGRG+dwwChOOeU0/u488wJxWx2M=",
+			"path": "gonum.org/v1/plot/vg/vgsvg",
+			"revision": "f671bfc8bb814c462e2a468e43f679bc94e21d9c",
+			"revisionTime": "2018-05-24T08:12:27Z"
+		},
+		{
+			"checksumSHA1": "C5ge2GwTwAfADp95BS9zXicDF9A=",
+			"path": "rsc.io/pdf",
+			"revision": "c47d69cf462f804ff58ca63c61a8fb2aed76587e",
+			"revisionTime": "2017-12-31T03:18:47Z"
+		}
+	],
+	"rootPath": "github.com/ksang/automata"
+}
