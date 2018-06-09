@@ -5,7 +5,7 @@ A network performance testing and visualization tool based on netperf and RRUL(R
 
 
 ## Why
-Inspired by [Flent](https://flent.org/index.html), it is nice to have a network performance testing and visualization tool with time series data. This tool is intend to solve below problems of flent:
+Inspired by [Flent](https://flent.org/index.html), it is nice to have a network performance testing and visualization tool with time series data. This tool is intended to solve below problems of flent:
 * Complexity of parameters and configurations
 * Many ports and protocols needs to be opened
 
@@ -47,7 +47,9 @@ A netperf netserver image can be pulled from:
 
 	docker pull ksang/netserver
 
-Example of using this image within kubernetes and istio:
+Example of using this image with kubernetes and istio:
+
+netserver.yaml:
 
 	apiVersion: v1
 	kind: Service

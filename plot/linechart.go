@@ -71,7 +71,7 @@ func LineChart(data rrul.Result, scale uint, filename string) error {
 	if _, err := png.WriteTo(w); err != nil {
 		return err
 	}
-	fmt.Println("LineChart saved to", filename)
+	fmt.Println("++LineChart saved to", filename)
 	return nil
 }
 

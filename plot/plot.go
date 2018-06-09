@@ -13,6 +13,7 @@ type Config struct {
 
 // Visualize is the entry point of plot package
 func Visualize(cfg Config, data rrul.Result) error {
+	defer Summary(data)
 	if cfg.Filename == "" {
 		return GenCSV(data, cfg.Scale)
 	}

@@ -13,9 +13,12 @@ type DataPoint struct {
 
 // Result defines time-series data returned by RRUL test
 type Result struct {
-	TCPUpload   []DataPoint
-	TCPDownload []DataPoint
-	UDPRR       []DataPoint
+	TCPUpload             []DataPoint
+	TCPDownload           []DataPoint
+	UDPRR                 []DataPoint
+	TCPUploadThroughput   float64
+	TCPDownloadThroughput float64
+	UDPRRThroughput       float64
 }
 
 // Launch is the entry point of running RRUL test

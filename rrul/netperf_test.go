@@ -32,7 +32,7 @@ func TestRunCmd(t *testing.T) {
 	}
 }
 
-func TestNetPerfmd(t *testing.T) {
+func TestNetPerfCmd(t *testing.T) {
 	tests := []struct {
 		cmd  string
 		args string
@@ -46,7 +46,7 @@ func TestNetPerfmd(t *testing.T) {
 			"",
 		},
 		{
-			netperfCmd + fmt.Sprintf(netperfParams, "127.0.0.1", 12865, udpRR, 3, 12866),
+			netperfCmd + fmt.Sprintf(netperfParams, "127.0.0.1", 12865, udpRR, 3, 0),
 			"",
 		},
 	}
@@ -63,5 +63,4 @@ func TestNetPerfmd(t *testing.T) {
 		}
 		fmt.Println(string(ret))
 	}
-
 }
