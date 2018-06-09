@@ -48,4 +48,50 @@ A netperf netserver image can be pulled from:
 	docker pull ksang/netserver
 
 Example of using this image within kubernetes and istio:
-TODO
+
+	apiVersion: v1
+	kind: Service
+	metadata:
+	  name: netserver
+	  labels:
+	    app: netserver
+	spec:
+	  ports:
+	  - name: netservertcp12865
+	    protocol: TCP
+	    port: 12865
+	    targetPort: 12865
+	  - name: netservertcp12866
+	    protocol: TCP
+	    port: 12866
+	    targetPort: 12866
+	  - name: netserverudp12866
+	    protocol: UDP
+	    port: 12866
+	    targetPort: 12866
+	  selector:
+	    app: netserver
+	---
+	apiVersion: extensions/v1beta1
+	kind: Deployment
+	metadata:
+	  name: netserver-v1
+	spec:
+	  replicas: 1
+	  template:
+	    metadata:
+	      labels:
+	        app: netserver
+	        version: v1
+	    spec:
+	      containers:
+	      - name: netserver
+	        image: ksang/netserver
+	        imagePullPolicy: IfNotPresent
+	        ports:
+	        - containerPort: 12865
+	          protocol: TCP
+	        - containerPort: 12866
+	          protocol: TCP
+	        - containerPort: 12866
+	          protocol: UDP
