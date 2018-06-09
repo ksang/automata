@@ -9,7 +9,7 @@ Inspired by [Flent](https://flent.org/index.html), it is nice to have a network 
 * Complexity of parameters and configurations
 * Many ports and protocols needs to be opened
 
-This tool is easy to use and only requires `netperf` ports (12865/tcp, 12866/tcp, 12866/udp) to be opened so can be easily integrated with firewall environment or Micro Services Architecture
+This tool is easy to use and only requires `netperf` ports (12865,12866,12867/tcp, 12866/udp) to be opened so can be easily integrated with firewall environment or Micro Services Architecture
 
 ## Output example
 This is an example of RRUL testing result on localhost:
@@ -32,8 +32,6 @@ netperf with demo feature enabled (`–enable-demo=yes`)
 	./build/automata -host <Server_Address> -o result.png
 #### Client usage
 	Usage of ./build/automata:
-	  -P uint
-	    	netserver data port (default 12866)
 	  -host string
 	    	netserver address e.g "192.168.100.100" (default "127.0.0.1")
 	  -l uint
@@ -41,7 +39,7 @@ netperf with demo feature enabled (`–enable-demo=yes`)
 	  -o string
 	    	output filename of plotting, print csv data if not provided
 	  -p uint
-	    	netserver control port (default 12865)
+	    	netserver base port, port+1 and port+2 are also used (default 12865)
 #### Docker, Kubernetes and Istio
 A netperf netserver image can be pulled from:
 
@@ -67,6 +65,10 @@ netserver.yaml:
 	    protocol: TCP
 	    port: 12866
 	    targetPort: 12866
+	  - name: netservertcp12867
+	    protocol: TCP
+	      port: 12867
+	      targetPort: 12867
 	  - name: netserverudp12866
 	    protocol: UDP
 	    port: 12866
@@ -94,6 +96,8 @@ netserver.yaml:
 	        - containerPort: 12865
 	          protocol: TCP
 	        - containerPort: 12866
+	          protocol: TCP
+	        - containerPort: 12867
 	          protocol: TCP
 	        - containerPort: 12866
 	          protocol: UDP

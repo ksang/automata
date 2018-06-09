@@ -13,9 +13,7 @@ import (
 var (
 	// netserver address
 	host string
-	// netserver control port
-	controlPort uint
-	// netserver data port
+	// netserver base port
 	port uint
 	// time in seconds to test
 	last uint
@@ -25,8 +23,7 @@ var (
 
 func init() {
 	flag.StringVar(&host, "host", "127.0.0.1", "netserver address e.g \"192.168.100.100\"")
-	flag.UintVar(&controlPort, "p", 12865, "netserver control port")
-	flag.UintVar(&port, "P", 12866, "netserver data port")
+	flag.UintVar(&port, "p", 12865, "netserver base port, port+1 and port+2 are also used")
 	flag.UintVar(&last, "l", 30, "time in seconds the test will last")
 	flag.StringVar(&output, "o", "", "output filename of plotting, print csv data if not provided")
 }
@@ -37,17 +34,16 @@ func checkPort(p uint) bool {
 
 func main() {
 	flag.Parse()
-	if !checkPort(controlPort) || !checkPort(port) {
-		fmt.Fprintln(os.Stderr, "Invalid port:", controlPort, port)
+	if !checkPort(port) {
+		fmt.Fprintln(os.Stderr, "Invalid port:", port)
 		flag.PrintDefaults()
 		return
 	}
 	res, err := rrul.Launch(
 		rrul.Config{
-			Host:        host,
-			ControlPort: controlPort,
-			DataPort:    port,
-			Seconds:     last,
+			Host:    host,
+			Port:    port,
+			Seconds: last,
 		})
 	if err != nil {
 		log.Fatal(err)

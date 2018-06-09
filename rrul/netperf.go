@@ -36,11 +36,11 @@ func (n *netperf) start() error {
 
 func (n *netperf) runTests(ctx context.Context) error {
 	tcpUploadCmd := netperfCmd + fmt.Sprintf(netperfParams,
-		n.cfg.Host, n.cfg.ControlPort, tcpUpload, n.cfg.Seconds, n.cfg.DataPort)
+		n.cfg.Host, n.cfg.Port, tcpUpload, n.cfg.Seconds, n.cfg.Port+1)
 	tcpDownloadCmd := netperfCmd + fmt.Sprintf(netperfParams,
-		n.cfg.Host, n.cfg.ControlPort, tcpDownload, n.cfg.Seconds, n.cfg.DataPort)
+		n.cfg.Host, n.cfg.Port, tcpDownload, n.cfg.Seconds, n.cfg.Port+2)
 	udpRRCmd := netperfCmd + fmt.Sprintf(netperfParams,
-		n.cfg.Host, n.cfg.ControlPort, udpRR, n.cfg.Seconds, 0)
+		n.cfg.Host, n.cfg.Port, udpRR, n.cfg.Seconds, 0)
 	tcpuCh := make(chan []byte, 1)
 	tcpdCh := make(chan []byte, 1)
 	udpCh := make(chan []byte, 1)
