@@ -6,7 +6,7 @@ Inspired by [Flent](https://flent.org/index.html), it is nice to have a network 
 * Complexity of parameters and configurations
 * Many ports and protocols needs to be opened
 
-This tool is easy to use and only requires `netperf` ports to be opened so can be easily integrated with firewall environment or Micro Services Architecture
+This tool is easy to use and only requires `netperf` ports (12865/tcp, 12866/tcp, 12866/udp) to be opened so can be easily integrated with firewall environment or Micro Services Architecture
 
 ## Output example
 This is an example of RRUL testing result on localhost:
