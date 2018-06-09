@@ -1,5 +1,8 @@
 # automata
+[![Go Report Card](https://goreportcard.com/badge/github.com/ksang/automata)](https://goreportcard.com/report/github.com/ksang/automata)
+
 A network performance testing and visualization tool based on netperf and RRUL(Real-Time Response Under Load)
+
 
 ## Why
 Inspired by [Flent](https://flent.org/index.html), it is nice to have a network performance testing and visualization tool with time series data. This tool is intend to solve below problems of flent:
