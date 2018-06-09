@@ -6,7 +6,7 @@ Inspired by [Flent](https://flent.org/index.html), it is nice to have a network 
 * Complexity of parameters and configurations
 * Many ports and protocols needs to be opened
 
-This tool is easy to use and only requires `netperf` ports to be opened so can easily used with firewall or Micro Services Architecture
+This tool is easy to use and only requires `netperf` ports to be opened so can be easily integrated with firewall environment or Micro Services Architecture
 
 ## Output example
 This is an example of RRUL testing result on localhost:
@@ -26,8 +26,8 @@ netperf with demo feature enabled (`–enable-demo=yes`)
 #### On Server
 	netserver
 #### On Client
-	./build/automath -host <Server_Address> -o result.png
-#### Usage
+	./build/automata -host <Server_Address> -o result.png
+#### Client usage
 	Usage of ./build/automata:
 	  -P uint
 	    	netserver data port (default 12866)
