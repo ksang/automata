@@ -129,6 +129,36 @@
 			"revisionTime": "2018-01-24T13:33:39Z"
 		},
 		{
+			"checksumSHA1": "wzmKbGJVFZxpvuk7Zv4wABBYA3Y=",
+			"path": "github.com/pplcc/plotext",
+			"revision": "68ab3c6e05c34baf5af21c9f5c3341f527a110ac",
+			"revisionTime": "2018-02-21T17:03:24Z"
+		},
+		{
+			"checksumSHA1": "nqfgUX5MkN/aCBB/yls1vmar2fA=",
+			"path": "github.com/pplcc/plotext/custplotter",
+			"revision": "68ab3c6e05c34baf5af21c9f5c3341f527a110ac",
+			"revisionTime": "2018-02-21T17:03:24Z"
+		},
+		{
+			"checksumSHA1": "iEvLv6JXt8Lr42Nwtup+buUCK0Y=",
+			"path": "github.com/pplcc/plotext/custplotter/internal",
+			"revision": "68ab3c6e05c34baf5af21c9f5c3341f527a110ac",
+			"revisionTime": "2018-02-21T17:03:24Z"
+		},
+		{
+			"checksumSHA1": "Mbog0NS7dVed4ZEISVb0Xe40cC8=",
+			"path": "github.com/pplcc/plotext/examples",
+			"revision": "68ab3c6e05c34baf5af21c9f5c3341f527a110ac",
+			"revisionTime": "2018-02-21T17:03:24Z"
+		},
+		{
+			"checksumSHA1": "8BxfzGkhyci/guqy2Wtx9aEAwmc=",
+			"path": "github.com/pplcc/plotext/internal",
+			"revision": "68ab3c6e05c34baf5af21c9f5c3341f527a110ac",
+			"revisionTime": "2018-02-21T17:03:24Z"
+		},
+		{
 			"checksumSHA1": "EwC/p76ydXOpSXQwc/uI7Ss+9FI=",
 			"path": "golang.org/x/image/draw",
 			"revision": "f315e440302883054d0c2bd85486878cb4f8572c",

@@ -16,5 +16,5 @@ func Visualize(cfg Config, data rrul.Result) error {
 	if cfg.Filename == "" {
 		return GenCSV(data, cfg.Scale)
 	}
-	return nil
+	return LineChart(data, cfg.Scale, cfg.Filename)
 }

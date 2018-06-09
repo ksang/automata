@@ -1,7 +1,6 @@
 package rrul
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -31,7 +30,6 @@ func MarshalOutput(output []byte) ([]DataPoint, error) {
 		dp.Unit = strings.TrimSpace(row[idx3+1 : idx4])
 		idx5 := strings.Index(row[idx4:], "ending at") + idx4 + 9
 		dp.Time, _ = strconv.ParseFloat(strings.TrimSpace(row[idx5:]), 10)
-		fmt.Printf("%#v\n", dp)
 		ret = append(ret, dp)
 	}
 	return ret, nil
