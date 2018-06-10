@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	fastping "github.com/tatsushid/go-fastping"
+	fastping "github.com/ksang/go-fastping"
 )
 
 // PingProbe sends ICMP packets and probing round trip latency

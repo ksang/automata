@@ -651,6 +651,9 @@ func (p *Pinger) procRecv(recv *packet, queue map[string]*net.IPAddr) {
 		p.mu.Lock()
 		if pkt.ID == p.id && pkt.Seq == p.seq {
 			rtt = time.Since(bytesToTime(pkt.Data[:TimeSliceLength]))
+		} else {
+			p.mu.Unlock()
+			return
 		}
 		p.mu.Unlock()
 	default:

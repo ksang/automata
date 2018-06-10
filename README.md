@@ -13,6 +13,7 @@ This tool is easy to use and only requires `netperf` ports (12865,12866,12867/tc
 
 ## Output example
 This is an example of RRUL testing result on localhost:
+
 ![example](example.png)
 
 ## How
@@ -35,7 +36,7 @@ netperf with demo feature enabled (`–enable-demo=yes`)
 	  -host string
 	    	netserver address e.g "192.168.100.100" (default "127.0.0.1")
 	  -l uint
-	    	time in seconds the test will last (default 30)
+	    	time in seconds the test will last (default 60)
 	  -o string
 	    	output filename of plotting, print csv data if not provided
 	  -p uint
