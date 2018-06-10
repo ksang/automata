@@ -16,9 +16,11 @@ type Result struct {
 	TCPUpload             []DataPoint
 	TCPDownload           []DataPoint
 	UDPRR                 []DataPoint
+	ICMPRR                []DataPoint
 	TCPUploadThroughput   float64
 	TCPDownloadThroughput float64
 	UDPRRThroughput       float64
+	ICMPRRThroughput      float64
 }
 
 // Launch is the entry point of running RRUL test

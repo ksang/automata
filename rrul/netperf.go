@@ -12,7 +12,7 @@ var (
 	tcpUpload     = "TCP_STREAM"
 	tcpDownload   = "TCP_MAERTS"
 	udpRR         = "UDP_RR"
-	netperfParams = " -P 0 -v 0 -D -0.20 -4 -Y CS1,CS1 -H %s -p %d -t %s " +
+	netperfParams = " -P 0 -v 0 -D -0.5 -4 -Y CS1,CS1 -H %s -p %d -t %s " +
 		"-l %d -F /dev/urandom -f m " +
 		" -- -k THROUGHPUT,LOCAL_CONG_CONTROL,REMOTE_CONG_CONTROL,TRANSPORT_MSS," +
 		"LOCAL_TRANSPORT_RETRANS,REMOTE_TRANSPORT_RETRANS,LOCAL_SOCKET_TOS,REMOTE_SOCKET_TOS," +
@@ -44,23 +44,41 @@ func (n *netperf) runTests(ctx context.Context) error {
 	tcpuCh := make(chan []byte, 1)
 	tcpdCh := make(chan []byte, 1)
 	udpCh := make(chan []byte, 1)
+	icmpCh := make(chan []DataPoint, 1)
+	quitCh := make(chan struct{}, 1)
 
+	go PingProbe(n.cfg.Host, icmpCh, quitCh)
 	go dispatchJob(ctx, tcpUploadCmd, tcpuCh)
 	go dispatchJob(ctx, tcpDownloadCmd, tcpdCh)
 	go dispatchJob(ctx, udpRRCmd, udpCh)
 	tcpu := <-tcpuCh
 	tcpd := <-tcpdCh
 	udp := <-udpCh
+	quitCh <- struct{}{}
+	icmpRes := <-icmpCh
 	tcpuRes, tcpuT, _ := MarshalOutput(tcpu)
 	tcpdRes, tcpdT, _ := MarshalOutput(tcpd)
 	udpRes, udpT, _ := MarshalOutput(udp)
 	n.data.TCPDownload = tcpuRes
 	n.data.TCPUpload = tcpdRes
 	n.data.UDPRR = udpRes
+	n.data.ICMPRR = icmpRes
 	n.data.TCPDownloadThroughput = tcpdT
 	n.data.TCPUploadThroughput = tcpuT
 	n.data.UDPRRThroughput = udpT
+	n.data.ICMPRRThroughput = calcMean(icmpRes)
 	return nil
+}
+
+func calcMean(data []DataPoint) float64 {
+	var sum float64
+	if len(data) == 0 {
+		return sum
+	}
+	for _, v := range data {
+		sum += v.Value
+	}
+	return sum / float64(len(data))
 }
 
 func dispatchJob(ctx context.Context, cmd string, out chan []byte) {

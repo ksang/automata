@@ -39,16 +39,25 @@ func LineChart(data rrul.Result, scale uint, filename string) error {
 	pLatancy.X.Label.Text = "Time(s)"
 	pLatancy.Y.Label.Text = "Latency(ms)"
 
-	// Make a line plotter and set its style.
+	// UDP
 	udpLine, udpPoints, err := plotter.NewLinePoints(MakePoints(data.UDPRR, scale))
 	if err != nil {
 		return err
 	}
-	udpLine.Color = color.RGBA{41, 141, 255, 255}
-	udpPoints.Color = color.RGBA{41, 141, 255, 255}
+	udpLine.Color = color.RGBA{249, 187, 45, 255}
+	udpPoints.Color = color.RGBA{249, 187, 45, 255}
 	udpPoints.Shape = draw.PyramidGlyph{}
-	pLatancy.Add(udpLine, udpPoints)
-	pLatancy.Legend.Add("UDP Round-Robin Latency", udpLine, udpPoints)
+	// ICMP
+	icmpLine, icmpPoints, err := plotter.NewLinePoints(MakePoints(data.ICMPRR, scale))
+	if err != nil {
+		return err
+	}
+	icmpLine.Color = color.RGBA{70, 136, 241, 255}
+	icmpPoints.Color = color.RGBA{70, 136, 241, 255}
+	icmpPoints.Shape = draw.PyramidGlyph{}
+	pLatancy.Legend.Add("ICMP RoundTrip Latency", icmpLine, icmpPoints)
+	pLatancy.Legend.Add("UDP RoundTrip Latency", udpLine, udpPoints)
+	pLatancy.Add(udpLine, udpPoints, icmpLine, icmpPoints)
 	// table is used for align two graph
 	table := plotext.Table{
 		RowHeights: []float64{1, 1},

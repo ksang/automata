@@ -24,7 +24,7 @@ var (
 func init() {
 	flag.StringVar(&host, "host", "127.0.0.1", "netserver address e.g \"192.168.100.100\"")
 	flag.UintVar(&port, "p", 12865, "netserver base port, port+1 and port+2 are also used")
-	flag.UintVar(&last, "l", 30, "time in seconds the test will last")
+	flag.UintVar(&last, "l", 60, "time in seconds the test will last")
 	flag.StringVar(&output, "o", "", "output filename of plotting, print csv data if not provided")
 }
 

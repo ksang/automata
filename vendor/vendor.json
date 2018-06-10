@@ -159,6 +159,12 @@
 			"revisionTime": "2018-02-21T17:03:24Z"
 		},
 		{
+			"checksumSHA1": "x4B83+YrPwR9Mv03l9jDORomVqk=",
+			"path": "github.com/tatsushid/go-fastping",
+			"revision": "d7bb493dee3e090e2ffb6914adddf17c1e7c026c",
+			"revisionTime": "2016-01-08T17:53:29Z"
+		},
+		{
 			"checksumSHA1": "EwC/p76ydXOpSXQwc/uI7Ss+9FI=",
 			"path": "golang.org/x/image/draw",
 			"revision": "f315e440302883054d0c2bd85486878cb4f8572c",
@@ -199,6 +205,48 @@
 			"path": "golang.org/x/image/tiff/lzw",
 			"revision": "f315e440302883054d0c2bd85486878cb4f8572c",
 			"revisionTime": "2018-04-03T01:08:12Z"
+		},
+		{
+			"checksumSHA1": "2WO+lOjAAQXEwRtnKQ6sWfLgD8Q=",
+			"path": "golang.org/x/net/bpf",
+			"revision": "1e491301e022f8f977054da4c2d852decd59571f",
+			"revisionTime": "2018-05-30T06:29:46Z"
+		},
+		{
+			"checksumSHA1": "knQG4w3hdzJW70p2e14sKVrbmII=",
+			"path": "golang.org/x/net/icmp",
+			"revision": "1e491301e022f8f977054da4c2d852decd59571f",
+			"revisionTime": "2018-05-30T06:29:46Z"
+		},
+		{
+			"checksumSHA1": "CHpYrf4HcmHB60gnTNxgjGgY53w=",
+			"path": "golang.org/x/net/internal/iana",
+			"revision": "1e491301e022f8f977054da4c2d852decd59571f",
+			"revisionTime": "2018-05-30T06:29:46Z"
+		},
+		{
+			"checksumSHA1": "8xjg/jXDAVLm/WtHZK+HBu+0CE4=",
+			"path": "golang.org/x/net/internal/nettest",
+			"revision": "1e491301e022f8f977054da4c2d852decd59571f",
+			"revisionTime": "2018-05-30T06:29:46Z"
+		},
+		{
+			"checksumSHA1": "r3BGWkR8mUBy1fjr9kVLbWeGeHc=",
+			"path": "golang.org/x/net/internal/socket",
+			"revision": "1e491301e022f8f977054da4c2d852decd59571f",
+			"revisionTime": "2018-05-30T06:29:46Z"
+		},
+		{
+			"checksumSHA1": "XbivZVxqFJAWXBisO1ttRVyJsto=",
+			"path": "golang.org/x/net/ipv4",
+			"revision": "1e491301e022f8f977054da4c2d852decd59571f",
+			"revisionTime": "2018-05-30T06:29:46Z"
+		},
+		{
+			"checksumSHA1": "G4TUqXCA84VKZ3pzyWos4hpgDL4=",
+			"path": "golang.org/x/net/ipv6",
+			"revision": "1e491301e022f8f977054da4c2d852decd59571f",
+			"revisionTime": "2018-05-30T06:29:46Z"
 		},
 		{
 			"checksumSHA1": "CkAiAXmGGesX+4q2uxkkU2Dpwew=",

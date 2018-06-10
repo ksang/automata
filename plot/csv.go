@@ -12,6 +12,7 @@ func GenCSV(result rrul.Result, scale uint) error {
 	genTable(result.TCPDownload, "TCPDownload", scale)
 	genTable(result.TCPUpload, "TCPUpload", scale)
 	genTable(result.UDPRR, "UDPRR", scale)
+	genTable(result.ICMPRR, "ICMPRR", scale)
 	return nil
 }
 
